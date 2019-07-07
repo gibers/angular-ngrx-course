@@ -17,11 +17,8 @@ export interface AppState {
 }
 
 export const reducers: ActionReducerMap<AppState> = {
-  router: routerReducer
+  router: routerReducer,
 };
-
-
-
 
 
 export const metaReducers: MetaReducer<AppState>[] =

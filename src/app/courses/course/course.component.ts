@@ -22,7 +22,7 @@ import {selectLessonsLoading} from '../course.selectors';
 })
 export class CourseComponent implements OnInit, AfterViewInit {
 
-    course:Course;
+    course: Course;
 
     dataSource: LessonsDataSource;
 

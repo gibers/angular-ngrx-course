@@ -18,7 +18,7 @@ import {CourseRequested} from '../course.actions';
 export class CourseResolver implements Resolve<Course> {
 
     constructor(
-        private coursesService:CoursesService,
+        private coursesService: CoursesService,
         private store: Store<AppState>) {
 
     }

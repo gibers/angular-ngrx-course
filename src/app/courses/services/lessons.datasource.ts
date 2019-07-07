@@ -1,6 +1,5 @@
 
 
-
 import {CollectionViewer, DataSource} from "@angular/cdk/collections";
 import {Observable, BehaviorSubject, of} from "rxjs";
 import {Lesson} from "../model/lesson";
@@ -21,7 +20,7 @@ export class LessonsDataSource implements DataSource<Lesson> {
 
     }
 
-    loadLessons(courseId:number, page: PageQuery) {
+    loadLessons(courseId: number, page: PageQuery) {
         this.store
           .pipe(
             select(selectLessonsPage(courseId, page)),

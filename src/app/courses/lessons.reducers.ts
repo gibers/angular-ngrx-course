@@ -9,7 +9,7 @@ export interface LessonsState extends EntityState<Lesson> {
   loading:boolean;
 }
 
-function sortByCourseAndSeqNo(l1: Lesson, l2:Lesson) {
+function sortByCourseAndSeqNo(l1: Lesson, l2: Lesson) {
   const compare = l1.courseId - l2.courseId;
   if (compare != 0) {
     return compare;
@@ -19,7 +19,7 @@ function sortByCourseAndSeqNo(l1: Lesson, l2:Lesson) {
   }
 }
 
-export const adapter : EntityAdapter<Lesson> =
+export const adapter: EntityAdapter<Lesson> =
   createEntityAdapter<Lesson>({
       sortComparer: sortByCourseAndSeqNo
   });

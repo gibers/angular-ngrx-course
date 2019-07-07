@@ -13,7 +13,7 @@ export const selectCoursesState = createFeatureSelector<CoursesState>("courses")
 export const selectLessonsState = createFeatureSelector<LessonsState>("lessons");
 
 
-export const selectCourseById = (courseId:number) => createSelector(
+export const selectCourseById = (courseId: number) => createSelector(
   selectCoursesState,
   coursesState => coursesState.entities[courseId]
 );

@@ -59,7 +59,7 @@ export class CourseEffects {
 
 
 
-  constructor(private actions$ :Actions, private coursesService: CoursesService,
+  constructor(private actions$: Actions, private coursesService: CoursesService,
               private store: Store<AppState>) {
 
   }

@@ -11,7 +11,7 @@ export interface CoursesState extends EntityState<Course> {
 }
 
 
-export const adapter : EntityAdapter<Course> =
+export const adapter: EntityAdapter<Course> =
   createEntityAdapter<Course>();
 
 
@@ -34,7 +34,7 @@ export function coursesReducer(state = initialCoursesState , action: CourseActio
 
     case CourseActionTypes.CourseSaved:
 
-      return adapter.updateOne(action.payload.course,state);
+      return adapter.updateOne(action.payload.course, state);
 
     default: {
 
