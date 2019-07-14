@@ -16,7 +16,6 @@ export interface AppState {
 
 }
 
-// ok 
 export const reducers: ActionReducerMap<AppState> = {
   router: routerReducer
 };
