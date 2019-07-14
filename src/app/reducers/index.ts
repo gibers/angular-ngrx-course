@@ -16,6 +16,7 @@ export interface AppState {
 
 }
 
+//ceci is a comment.
 export const reducers: ActionReducerMap<AppState> = {
   router: routerReducer
 };
