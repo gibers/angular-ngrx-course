@@ -15,11 +15,11 @@ import {LessonsDataSource} from "../services/lessons.datasource";
 })
 export class CourseComponent implements OnInit, AfterViewInit {
 
-    course:Course;
+    course: Course;
 
     dataSource: LessonsDataSource;
 
-    displayedColumns= ["seqNo", "description", "duration"];
+    displayedColumns= ["seqNo", "description", "durations"];
 
     @ViewChild(MatPaginator, { static: true }) paginator: MatPaginator;
 
