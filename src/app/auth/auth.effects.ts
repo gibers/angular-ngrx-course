@@ -15,7 +15,7 @@ export class AuthEffects {
     tap(action => localStorage.setItem('user', JSON.stringify(action.payload.user)))
   );
 
-  @Effect({dispatch:false})
+  @Effect({dispatch: false})
   logout$ = this.actions$.pipe(
     ofType<Logout>(AuthActionTypes.LogoutAction),
     tap(() => {

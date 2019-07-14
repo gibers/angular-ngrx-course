@@ -13,7 +13,7 @@ export const initialAuthState: AuthState = {
   user: undefined
 };
 
-export function authReducer(state = initialAuthState,
+export function authReducer(state: AuthState = initialAuthState,
                             action: AuthActions): AuthState {
   switch (action.type) {
 
